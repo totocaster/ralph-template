@@ -34,7 +34,8 @@ scripts/ralph/progress.txt# Progress log + reusable patterns
 ```
 
 - The optional numeric argument caps iterations (default `10`).
-- The script streams `prompt.md` into `codex exec --dangerously-bypass-approvals-and-sandbox`, so Codex runs with full local access—be sure the repo is sandbox-safe.
+- Pass `--client claude` to run through the Claude Code CLI instead of Codex: `./scripts/ralph/ralph.sh --client claude 5`. Codex remains the default.
+- The script streams `prompt.md` into whichever CLI you select: Codex uses `codex exec --dangerously-bypass-approvals-and-sandbox`, and Claude uses `claude --print --permission-mode acceptEdits`. Either way, the agent operates against your local working tree, so audit the PRD carefully.
 - Codex is expected to:
   1. Read `prd.json` and `progress.txt`.
   2. Pick the highest-priority story where `passes` is `false`.

@@ -13,6 +13,20 @@
       "priority": 1,
       "passes": true,
       "notes": "This entry exists only to illustrate the JSON structure—replace it before running Ralph on a real codebase."
+    },
+    {
+      "id": "RW-EXAMPLE",
+      "title": "Sample story: add request logging middleware",
+      "acceptanceCriteria": [
+        "Create `internal/middleware/logging.go` exporting `NewLoggingMiddleware(logger)` that wraps HTTP handlers and logs method, path, status, and duration.",
+        "Register the middleware in `cmd/api/main.go` so every endpoint is covered.",
+        "Add tests proving the middleware logs status codes for both success and failure paths.",
+        "Document the new middleware and log format in `README.md`.",
+        "Run `go test ./...` and record the result in `scripts/ralph/progress.txt`."
+      ],
+      "priority": 2,
+      "passes": true,
+      "notes": "Sample workload demonstrating the expected level of detail. Delete or replace with a real story before executing Ralph. Coding agents both compose and consume this PRD—write them exactly the instructions you want followed."
     }
   ]
 }

@@ -48,6 +48,7 @@ scripts/ralph/progress.txt# Progress log + reusable patterns
 ## Customizing the Template
 
 - **PRD structure** – `branchName` controls which branch Codex should create/switch into. `userStories` is an ordered list where `priority` determines the work queue. Keep acceptance criteria bullet-sized, and include required commands (tests, linters, deploy scripts) there.
+- **Sample story** – `scripts/ralph/prd.json` ships with `RW-000` (meta reminder) plus `RW-EXAMPLE`, a fully fleshed-out story showing the level of detail agents need. Treat it purely as documentation—delete/replace it before running Ralph. Remember: the coding agent is both the author and the executor of your PRD, so write the exact steps you expect it to follow.
 - **Prompt** – `scripts/ralph/prompt.md` is the agent-side contract. Document coding standards, repos the agent should reference, how to update docs, and anything humans have to review manually.
 - **Progress log** – Keep the `## Codebase Patterns` block at the top as a scratchpad of heuristics agents must respect. Every iteration should append a dated section with summary, files, and learnings. This doubles as an audit trail.
 - **AGENTS.md** – Treat it as a living FAQ for your repo. Add conventions, tooling quirks, or known pitfalls. Codex reads it automatically when the prompt tells it to.

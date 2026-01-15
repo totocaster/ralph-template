@@ -1,0 +1,16 @@
+# Ralph Progress Log
+Started: 2025-01-01 UTC (update to your actual start date)
+
+## Codebase Patterns
+- Document quick heuristics, mandatory commands, and repo-specific conventions here (newest insights first).
+- Examples: “Run `pnpm test` after touching frontend files”, “Do not edit generated SDKs manually”, “Docs live in `/docs` and use mdx”.
+
+---
+
+## 2025-01-01 - SAMPLE
+- Placeholder entry showing the required format—replace with your real progress notes.
+- Key files touched: scripts/ralph/*
+- Validation: none (template bootstrap only)
+- **Learnings:**
+  - Keep this section updated after every iteration so future agents inherit context.
+---

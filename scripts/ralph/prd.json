@@ -1,0 +1,18 @@
+{
+  "branchName": "ralph/feature-loop",
+  "userStories": [
+    {
+      "id": "RW-000",
+      "title": "Replace the sample PRD with real stories",
+      "acceptanceCriteria": [
+        "Draft the actual backlog for this repository in `scripts/ralph/prd.json` (use small, independent stories).",
+        "Set `branchName` to the integration or feature branch Ralph should use.",
+        "Mark every new story with `passes: false` until you have manually verified it.",
+        "Remove this placeholder story once real work exists."
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": "This entry exists only to illustrate the JSON structure—replace it before running Ralph on a real codebase."
+    }
+  ]
+}
